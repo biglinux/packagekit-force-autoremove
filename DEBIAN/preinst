@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+package_name=packagekit-force-autoremove
+mkdir -p "/usr/share/dpkgdivert/packagekit-force-autoremove"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/packagekit-force-autoremove/usrlibx86_64-linux-gnupackagekit-backendlibpk_backend_aptcc.so" --rename "/usr/lib/x86_64-linux-gnu/packagekit-backend/libpk_backend_aptcc.so"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/usr/lib/x86_64-linux-gnu/packagekit-backend/libpk_backend_aptcc.so")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/packagekit-force-autoremove/usrlibx86_64-linux-gnupackagekit-backendlibpk_backend_aptcc.so" --rename "/usr/lib/x86_64-linux-gnu/packagekit-backend/libpk_backend_aptcc.so"
+fi
+;;
+esac
+exit 0
