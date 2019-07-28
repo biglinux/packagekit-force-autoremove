@@ -1,0 +1,6 @@
+77034ef87ef25b37b61596ca0af00ba7  usr/lib/x86_64-linux-gnu/packagekit-backend/libpk_backend_aptcc.so
+12166c04bfdd857bf26404d75a2cd99e  DEBIAN/dpkg-divert
+9d099bbbbf65a0f3d5fe197cc3f256f2  DEBIAN/preinst
+6f09c6eb6362a44b7ca2b9390d0efc5c  DEBIAN/postrm
+d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
+fe9bf72cb0a7c26ed524b2016b7fb0a2  DEBIAN/control
