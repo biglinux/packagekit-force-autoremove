@@ -3,4 +3,4 @@
 9d099bbbbf65a0f3d5fe197cc3f256f2  DEBIAN/preinst
 6f09c6eb6362a44b7ca2b9390d0efc5c  DEBIAN/postrm
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
-fe9bf72cb0a7c26ed524b2016b7fb0a2  DEBIAN/control
+442ba9dda0eba2940a747f37ea356aef  DEBIAN/control
