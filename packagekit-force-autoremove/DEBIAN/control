@@ -1,5 +1,5 @@
 Package: packagekit-force-autoremove
-Version: 1.0.0-1big2
+Version: 1.0.0-1big3
 Depends: packagekit
 Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
